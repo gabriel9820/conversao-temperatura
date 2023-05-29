@@ -1,7 +1,6 @@
 name: CI
 
 on:
-  #triggers
   push:
     branches: [ main ]
   pull_request:
@@ -11,7 +10,7 @@ on:
   
 jobs:
   CI:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v2
@@ -20,4 +19,3 @@ jobs:
         uses: actions/setup-node@v2.5.2
         with:
           node-version: 16.13.2
-    
